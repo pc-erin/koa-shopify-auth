@@ -4,7 +4,7 @@ export type AccessMode = 'online' | 'offline';
 
 export interface AuthConfig {
   myShopifyDomain?: string;
-  accessMode?: 'online' | 'offline';
+  accessMode?: AccessMode;
   afterAuth?(ctx: Context): void;
 }
 
